@@ -28,8 +28,22 @@
                 {
                     Console.Write(i);
                 }
-                Console.WriteLine("Här slutar Jagged Array, del två kommer i eftermiddagens övningar.");
+                Console.WriteLine();
             }
+            string[][] textJagged = new string[4][];
+            textJagged[0] = new string[] { "Hello", "World", "!" };
+            textJagged[1] = new string[] { "Tom rad", "Följer" };
+            textJagged[2] = new string[] { };
+            textJagged[3] = new string[] { jagged[1][2].ToString(),"\t", "Siffran fyra som sträng", "från tidigare array." };
+            foreach (string[] inner in textJagged)
+            {
+                foreach (string str in inner)
+                {
+                    Console.Write(str);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine("Här slutar Jagged Array, del två kommer i eftermiddagens övningar.");
         }
 
         private static void MultiDimensionArrayDemo()
